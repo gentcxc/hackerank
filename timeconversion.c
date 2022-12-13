@@ -1,18 +1,18 @@
-char* timeConversion(char* s)
+char* simeConversion(char* s)
 {
-    char t[10];
-    scanf("%s", t);
+    char s[10];
+    scanf("%s", s);
 
-    if(t[8] == 'P')
-        if(t[0] != '1' || t[1] != '2')
+    if(s[8] == 'P')
+        if(s[0] != '1' || s[1] != '2')
         {
-            t[1] += 2;
-            t[0] ++;
+            s[1] += 2;
+            s[0] ++;
         }
-    if(t[0] == '1' && t[1] == '2' && t[8] == 'A')
+    if(s[0] == '1' && s[1] == '2' && s[8] == 'A')
         {
-            t[0] = '0';
-            t[1] = '0';
+            s[0] = '0';
+            s[1] = '0';
         }
 }
 
